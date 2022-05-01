@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "4cdc805b-3441-402a-998a-b9397b29b4f7",
+		"name": "CorePHP-API-CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost/CRUD-API/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/CRUD-API/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"CRUD-API",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/CRUD-API/create-api.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"firstname\": \"Sachin\",\r\n\"lastname\": \"Tendulkar\",\r\n\"username\": \"srt@gmail.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/CRUD-API/create-api.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"CRUD-API",
+						"create-api.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/CRUD-API/api-update.php",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"firstname\":\"vivgg\",\r\n    \"lastname\":\"vivgg\",\r\n    \"username\":\"vivgg\"\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/CRUD-API/api-update.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"CRUD-API",
+						"api-update.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/CRUD-API/api-delete.php",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":40\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/CRUD-API/api-delete.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"CRUD-API",
+						"api-delete.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
